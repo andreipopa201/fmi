@@ -47,6 +47,18 @@ Exercitii:
 2. Subprogram care afiseaza pentru fiecare functie denumirea acesteia impreuna cu lista angajatiilor care au salariul mai mare decat media salariilor colegilor (aceeasi functie) si care au avut cel putin doi pacienti. Tratati erorile care pot sa apara.(3p)
 
 3. Trigger care la stergerea unui angajat care este manager de specializare, pune in locul acestuia angajatul care a avut cei mai multi pacienti dintre personalul cu specializarea respectiva (se considera ca acesta este unic). (3p)
+4.
+Se dau urmatoarele baze de date:
+EVENIMENT_SPORTIV(cod_evenim(PK),denumire,data_inceput,data_sfarsit,cod_loc)
+LOCATIE(cod_locatie(PK),denumire,adresa,tip)
+FINANTEAZA(cod_evenim(PK),cod_sponsor(pk),suma,data_virament)
+SPONSOR(cod_sponsor(pk),nume,prenume,telefon,adresa,cont_bancar)
+
+a) Sa se creeze o fctie tabelara care primeste ca si argument o locatie(prin codul acesteia) si returneaza lista evenimentelor sportive desfasurate, si duarata acestora in zile.
+b)Scrieti comanda prin care se apeleaza functia creata la pctul a)
+c)Un trigger care verifica daca sumele donate de un anumit sponsor unui anumit eveniment sunt efectuate inaintea inceperii acestuia.Daca nu donatiile nu sunt permise-nu le scriu in baza de date
+d)O procedura care nu are parametrii de intrare si care afiseaza, intr-un cursor, o lista cu sponsorii si sponsorizarile totale efectuate de acestia, in ordine descrescatoare a sumelor sponsorizate
+e)O functie care determina totalul sumelor sponsorizate pt un anumit eveniment sportiv,identificat prin codul acestuia, dat ca si argument al functiei.
 
 
 
